@@ -1,0 +1,22 @@
+{
+  "name": "zarith",
+  "version": "6.1.2000",
+  "esy": {
+    "build": [
+      [
+        "sh",
+        "-exc",
+        "LDFLAGS=\"$LDFLAGS $(pkg-config gmp --libs-only-L)\" CFLAGS=\"$CFLAGS $(pkg-config gmp --cflags-only-I)\" ./configure"
+      ],
+      ["make"]
+    ],
+    "buildsInSource": true,
+    "install": ["make install"]
+  },
+  "dependencies": {
+    "@opam/ocamlfind": "*",
+    "ocaml": ">=4.4.0",
+    "pkg-config": "briskml/pkg-config",
+    "gmp": "briskml/gmp#ef0c2bf"
+  }
+}
