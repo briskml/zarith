@@ -6,7 +6,7 @@
       [
         "sh",
         "-exc",
-        "LDFLAGS=\"$LDFLAGS $(pkg-config gmp --libs-only-L)\" CFLAGS=\"$CFLAGS $(pkg-config gmp --cflags-only-I)\" ./configure"
+        "LDFLAGS=\"$LDFLAGS $(pkg-config gmp --libs)\" CFLAGS=\"$CFLAGS $(pkg-config gmp --cflags)\" ./configure"
       ],
       ["make"]
     ],
