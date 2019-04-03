@@ -17,6 +17,6 @@
     "@opam/ocamlfind": "*",
     "ocaml": ">=4.4.0",
     "pkg-config": "briskml/pkg-config",
-    "gmp": "briskml/gmp#ef0c2bf"
+    "gmp": "briskml/gmp#04c42f8"
   }
 }
